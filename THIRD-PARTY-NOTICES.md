@@ -80,9 +80,9 @@ SOFTWARE.
 
 ---
 
-## Bundled typefaces - Inter, Space Grotesk, DM Sans, JetBrains Mono
+## Bundled typefaces - Inter, Space Grotesk, DM Sans, JetBrains Mono, Lora, Caveat, Comic Neue, Noto Color Emoji
 
-Skales bundles four typefaces, each used under the
+Skales bundles eight typefaces, each used under the
 **SIL Open Font License 1.1**. They are shipped with the app rather than fetched
 at runtime so a packaged, offline install renders the real type instead of a
 system fallback, and so no page load reaches a font CDN.
@@ -91,6 +91,10 @@ system fallback, and so no page load reaches a font CDN.
 - **Space Grotesk** (https://github.com/floriankarsten/space-grotesk), Copyright (c) 2020 Florian Karsten
 - **DM Sans** (https://github.com/googlefonts/dm-fonts), Copyright (c) 2014-2024 Colophon Foundry, Jonny Pinhorn, Indian Type Foundry
 - **JetBrains Mono** (https://github.com/JetBrains/JetBrainsMono), Copyright (c) 2020 The JetBrains Mono Project Authors
+- **Lora** (https://github.com/cyrealtype/Lora-Cyrillic), Copyright 2011 The Lora Project Authors, with Reserved Font Name "Lora" - a chat-bubble face offered under Settings > Appearance
+- **Caveat** (https://github.com/googlefonts/caveat), Copyright 2014 The Caveat Project Authors - a chat-bubble face offered under Settings > Appearance
+- **Comic Neue** (https://github.com/crozynski/comicneue), Copyright 2014 The Comic Neue Project Authors - a chat-bubble face offered under Settings > Appearance
+- **Noto Color Emoji** (https://github.com/googlefonts/noto-emoji), Copyright (c) Google Inc. - shipped as the COLRv1 build so every emoji in the app renders the same on a machine that has no colour emoji font of its own
 
 The subset files are the ones Google Fonts serves, unmodified; only the file
 names differ. The OFL permits bundling and redistribution with the application;
@@ -158,6 +162,34 @@ OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER
 DEALINGS IN THE FONT SOFTWARE.
 ```
+
+---
+
+## Noto Emoji 3D and animated — CC BY 4.0
+
+The animated emoji Skales plays in chat, and the 3D emoji artwork it shows
+beside them, come from Google's **Noto Emoji** projects
+(https://github.com/googlefonts/noto-emoji and
+https://github.com/googlefonts/noto-emoji-animation), used under the
+**Creative Commons Attribution 4.0 International** licence
+(https://creativecommons.org/licenses/by/4.0/).
+
+This is a redistribution, not a hotlink, and that is why the attribution is
+carried here and shown inside the app rather than left to the upstream site:
+the Lottie files are served from Skales' own relay
+(`relay.skales.app/emojis/<codepoint>/lottie.json`), and Google's CDN is only a
+fallback the user can switch on. CC BY 4.0 asks for the name of the creator,
+the source and the licence wherever the material appears, so all three travel
+with every copy of the app.
+
+- Creator: **Google** (the Noto Emoji authors)
+- Source: `googlefonts/noto-emoji`, `googlefonts/noto-emoji-animation`
+- Licence: CC BY 4.0, link above
+- Changes: none to the artwork. The files are mirrored unmodified; only the
+  hosting address differs.
+
+Noto is a trademark of Google LLC. The typeface and the artwork are licensed;
+the name is not. See TRADEMARK.md.
 
 ---
 
