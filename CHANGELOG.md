@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## v12.9.40 - Lantern
+## v12.9.41 - Lantern
 
 **A release that gives every surface the same hands, and makes a course that Moodle counts as done.**
 
@@ -15,6 +15,8 @@ The chat and Skales Code now have what a coding agent needs every day: they pack
 Courses are the other half. One course runtime serves SCORM 1.2 and 2004, cmi5, xAPI, AICC and Common Cartridge; Flow builds e-learning courses in their own mode; any folder can be packaged, checked and tested; and a finished course goes into Moodle from wherever you are, replacing the package in the same activity so your learners keep their progress. Plugins grow into whole applications with their own model calls, long jobs, previews, files in and out and hand-offs, which is what the free E-Learning plugin is built on.
 
 Settings is rebuilt from the ground up. It opens as one window over whatever you are doing, with ten categories on the left and the same names as on the phone. Every switch and choice takes effect the moment you change it, nothing waits for a Save button, and nothing you or another part of Skales changed elsewhere is undone when you close it.
+
+12.9.41 is the same release with a repaired Windows build: the Windows app starts again, and every part the app loads on demand is in the Windows package. macOS and Linux behave exactly as in 12.9.40.
 
 ### Added
 
@@ -137,6 +139,10 @@ Settings is rebuilt from the ground up. It opens as one window over whatever you
 - **A plugin of up to 16 MB reaches your phone.** Taking a plugin from the computer to the phone used to stop at 2 MB; it now arrives in parts and is joined on the phone.
 
 ### Fixed
+
+- **Skales starts again on Windows.** The Windows build of 12.9.40 closed at launch without a window or a message. It opens normally again.
+
+- **Nothing is missing from the Windows installation any more.** Parts of the app that load on demand were absent from the Windows package, so scheduled jobs, the daily briefing, the operator, parts of the live chat, the Buddy chat, the AIPointer chat, Autopilot and skill generation could fail quietly in the background. Every part the app asks for is now in the package, and the build refuses to ship if one is not.
 
 - **Opening a file in Code again reads its latest contents.** A file created after an earlier click now opens normally, loading shows its own state, and filesystem failures name their cause instead of appearing as a deleted file or an empty review.
 
