@@ -231,7 +231,11 @@ Pair via QR and the phone gets this desktop's full tool set (260+ tools: shell, 
 
 #### ⌚ Skales Pocket
 
-Skales on an **M5Stick S3**: a screen the size of a stamp, two buttons and a microphone, with Iris Orbit's particle eye as its face. It pairs to one desktop exactly the way a phone does - confirmed on the computer, over the same end-to-end encrypted relay - so it needs no open port, no address on the local network and no shared Wi-Fi, and it carries no provider key and does no thinking of its own. Hold **B** and talk, let go and it sends; the answer comes back out loud. When something needs your permission the approval card comes to your wrist and the two buttons are the answer: **A** yes, **B** no. **Dictation mode** makes it one-way for loud rooms and for anything nobody should overhear - you read the text it understood, **A** sends it and **B** throws it away, and the reply is text only. What you said is turned into text by the computer it is paired with, through the same speech setup the microphone in Skales uses. It dims, sleeps, and any button wakes it.
+Skales on an **M5Stack StickS3**: a screen the size of a stamp, two buttons and a microphone, with Iris Orbit's particle eye as its face. It pairs to one desktop exactly the way a phone does - confirmed on the computer, over the same end-to-end encrypted relay - so it needs no open port, no address on the local network and no shared Wi-Fi, and it carries no provider key and does no thinking of its own. Hold **B** and talk, let go and it sends; the answer comes back out loud. When something needs your permission the approval card comes to your wrist and the two buttons are the answer: **A** yes, **B** no. **Dictation mode** makes it one-way for loud rooms and for anything nobody should overhear - you read the text it understood, **A** sends it and **B** throws it away, and the reply is text only. What you said is turned into text by the computer it is paired with, through the same speech setup the microphone in Skales uses. It dims, sleeps, and any button wakes it.
+
+<p align="center"><img src="docs/skales-pocket.png" alt="Skales Pocket on an M5Stack StickS3: home, hold B and talk, an approval, the answer, dictation" width="100%"></p>
+
+Firmware, the pairing and install tool, and where to buy a StickS3: **[skalesapp/skales-pocket](https://github.com/skalesapp/skales-pocket)** (MIT licence).
 
 ### 🧩 Plugins
 
